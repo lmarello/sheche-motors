@@ -1,0 +1,32 @@
+.__section-home {
+    padding: 0;
+    margin: 0;
+    /* background: var(--color-dark-gray);  */
+    height: 100vh;
+}
+.__section-home{
+    background: url('../../images/banner-services.jpg');
+    background-position: center;  
+    background-size: cover;
+    background-position-y: 0px;
+}
+.__home-brand{
+    font-family: 'Righteous';
+}
+.__home-brand > span:nth-child(1){
+    color: var(--sheche-primary-color);
+    font-size: 5rem;
+    display: block;
+    line-height: 1;
+}
+.__home-brand > span:nth-child(2){
+    color: #d6e1ef;
+    font-size: 2rem;
+    padding-left: 20px;
+    line-height: 0;
+    opacity: 0.8;
+}
+.__home-text{
+    color: var(--sheche-font-gray);
+    margin: 40px auto;
+}

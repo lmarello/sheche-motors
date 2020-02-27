@@ -1,0 +1,24 @@
+.__section-contact {
+  background: linear-gradient(#000, var(--sheche-secondary-color));
+  min-height: calc(100vh - var(--footer-height));
+}
+.__info-title {
+  display: block;
+  color: var(--sheche-primary-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.__info-data {
+  display: block;
+  color: #d6e1ef;
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+#section-contact > div.row.col-12 > div.col-12.col-md-4.__contact-info > span:nth-child(4) > span{
+  margin-bottom: 0px;
+}
+#__map-location {
+  width: 100%;
+  height: 100%;
+}

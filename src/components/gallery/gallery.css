@@ -1,0 +1,15 @@
+.__section-gallery {
+    /* background: var(--sheche-primary-color); */
+    background: linear-gradient(#000,var(--sheche-secondary-color));
+    background: black;
+    min-height: 100vh;
+  }
+  .carousel-caption{
+    background: #00000099;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .carousel-indicators li {
+    background-color: #fbe23c;
+}

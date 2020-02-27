@@ -1,0 +1,80 @@
+.tmp1 {
+  color: var(--sheche-primary-color);
+  font-weight: 600;
+  font-size: 30px;
+}
+.tmp2 {
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--sheche-font-gray);
+}
+.__navbar {
+  /* background-color: var(--sheche-secondary-color);  */
+  height: var(--navbar-height);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 11;
+}
+.__navbar.bkg {
+    background: var(--sheche-secondary-color);
+}
+.__navbar-logo {
+  position: absolute;
+  top: 10px;
+  width: 43px;
+}
+
+.__navbar-list {
+  list-style: none;
+  margin-top: 13px;
+}
+.__navbar-list li {
+  display: inline-block;
+}
+.__navbar-list li a {
+  text-decoration: none;
+  padding-left: 12px;
+  color: var(--sheche-font-gray);
+}
+.__navbar-list li a:hover {
+  color: var(--sheche-primary-color);
+}
+
+.__icon-menu,
+.__icon-close{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .__icon-menu,
+  .__icon-close {
+    display: block;
+  }
+  .__navbar-list{
+      display: none;
+  }
+  .__navbar.active{
+      background: var(--sheche-secondary-color);
+  }
+  .__navbar-list.active {
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 47px;
+    text-align: center;
+    padding:0;
+    background: var(--sheche-secondary-color);
+  }
+  .__navbar-list.active li {
+    display: block;
+    background:inherit;
+    padding: 10px;
+    background: var(--sheche-secondary-color);
+  }
+  .__navbar-list.active li:nth-child(4){
+      padding-bottom: 20px;
+  }
+}

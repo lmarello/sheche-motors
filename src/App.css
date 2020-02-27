@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root {
+  --sheche-primary-color: #fbe23c;
+  --sheche-primary-color-hover: #c3ad04;
+  --sheche-secondary-color: #272b2d;
+  --sheche-font-gray: #e0e0e0;
+  --navbar-height: 60px;
+  --footer-height: 40px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background: #000; */
+  background: var(--sheche-secondary-color);
+  font-family: "Josefin Sans";
+}
+a {
+  text-decoration: none !important;
+  color: #e0e0e0;
+}
+a:hover {
+  color: #f3d706;
+}
+.btn-sheche {
+  background: var(--sheche-primary-color) !important;
+  border: none;
+  color: var(--sheche-secondary-color);
+  border-radius: 0;
+  font-weight: 500;
+  padding: auto 8px;
+  min-width: 64px;
+  height: 42px;
+}
+.btn-sheche a {
+  color: var(--sheche-secondary-color);
+}
+.btn-sheche:hover,
+.btn-sheche:focus,
+.btn-sheche:active {
+  background: #33393e !important;
+  border: 0 solid transparent;
+  outline: none !important;
+  color: #fbe23c;
+  box-shadow: none;
+}
+.btn-sheche:hover a {
+  color: #fbe23c;
+}
+.__section-title {
+  /* font-family: "Saira Stencil One"; */
+  font-family: "Righteous";
+  padding-top: 100px;
+  font-size: 1.8rem;
+  /* color: white; */
+  color: var(--sheche-primary-color);
+  margin-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.__icon {
+  display: inline-block;
+  background-size: cover;
+  filter: contrast(0) brightness(1.5);
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.__icon-menu{
+    background-image: url('./images/menu.svg');
+    position: absolute;
+    top: 25%;
+    right: 30px;
+    height: 30px;
+    width: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.__icon-close{
+    background-image: url('./images/close.svg');
+    position: absolute;
+    top: 38%;
+    right: 30px;
+    width: 18px;
+    height: 18px;
 }
