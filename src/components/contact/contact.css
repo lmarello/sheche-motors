@@ -22,3 +22,40 @@
   width: 100%;
   height: 100%;
 }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 20%;
+  height: 300px;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.social-list ul{
+  list-style: none;
+}
+.social-list ul li{
+  display: inline-block;
+  padding: 15px;
+  cursor: pointer;
+}
+.social-list ul li div{
+  border: 1px solid #7b7b7b;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list ul li div a{
+  display: flex;
+}
+.social-list ul li:hover a span[class^="icon-"]:before{
+  color: #fbe23c;
+  cursor: pointer;
+}

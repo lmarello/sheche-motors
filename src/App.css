@@ -58,25 +58,5 @@ a:hover {
 
 .__icon {
   display: inline-block;
-  background-size: cover;
-  filter: contrast(0) brightness(1.5);
   cursor: pointer;
-}
-
-.__icon-menu{
-    background-image: url('./images/menu.svg');
-    position: absolute;
-    top: 25%;
-    right: 30px;
-    height: 30px;
-    width: 30px;
-}
-
-.__icon-close{
-    background-image: url('./images/close.svg');
-    position: absolute;
-    top: 38%;
-    right: 30px;
-    width: 18px;
-    height: 18px;
 }

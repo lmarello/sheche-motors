@@ -42,14 +42,14 @@
   color: var(--sheche-primary-color);
 }
 
-.__icon-menu,
-.__icon-close{
+.icon-menu,
+.icon-clear{
     display: none;
 }
 
 @media screen and (max-width: 700px) {
-  .__icon-menu,
-  .__icon-close {
+  .icon-menu,
+  .icon-clear {
     display: block;
   }
   .__navbar-list{

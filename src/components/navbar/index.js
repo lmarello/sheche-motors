@@ -12,7 +12,6 @@ class NavBar extends React.Component {
   }
 
   componentDidMount() {
-    const self = this;
     const nav = document.getElementById("navbar");
 
     window.addEventListener("scroll", function() {
@@ -32,12 +31,12 @@ class NavBar extends React.Component {
   }
 
   handleMenuOnClick(menuIcon) {
-    this.setState({ menuActive: menuIcon == "__icon-menu" });
+    this.setState({ menuActive: menuIcon == "icon-menu" });
   }
 
   renderMenu() {
     const menuActive = this.state.menuActive ? "active" : "";
-    const menuIcon = this.state.menuActive ? "__icon-close" : "__icon-menu";
+    const menuIcon = this.state.menuActive ? "icon-clear" : "icon-menu";
 
     return (
       <div>
