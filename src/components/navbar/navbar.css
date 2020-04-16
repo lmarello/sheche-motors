@@ -12,13 +12,14 @@
 .__navbar {
   /* background-color: var(--sheche-secondary-color);  */
   height: var(--navbar-height);
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   z-index: 11;
 }
 .__navbar.bkg {
-    background: var(--sheche-secondary-color);
+    /* background: var(--sheche-secondary-color); */
+    background: transparent;
 }
 .__navbar-logo {
   position: absolute;
@@ -37,6 +38,9 @@
   text-decoration: none;
   padding-left: 12px;
   color: var(--sheche-font-gray);
+  color: white;
+  font-size: 13PX;
+  font-weight: 400;
 }
 .__navbar-list li a:hover {
   color: var(--sheche-primary-color);

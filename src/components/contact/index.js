@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import logo from "../../images/logo.png";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -13,65 +14,20 @@ class Contact extends React.Component {
     }
   }
 
-  render() {
+  renderBrands(){
     return (
       <React.Fragment>
-        <div
-          id="section-contact"
-          className="__section-contact __height-100-vh text-center"
-        >
-          <div className="__section-title mb-2">CONTACTO</div>
-          <div className="row col-12 p-0 m-0">
-            
-          <div className="col-12 social-list">
-              <ul className="m-0 p-0">
-                <li>
-                  <div>
-                    <a href={this.contactLinks['whatsapp']} target="_blank" rel="noopener noreferrer">
-                      <span className="icon-whatsapp icon-contact"></span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href={this.contactLinks['facebook']} target="_blank" rel="noopener noreferrer">
-                      <span className="icon-facebook icon-contact"></span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href={this.contactLinks['instagram']} target="_blank" rel="noopener noreferrer">
-                      <span className="icon-instagram icon-contact"></span>
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <a href={this.contactLinks['youtube']} target="_blank" rel="noopener noreferrer">
-                      <span className="icon-youtube icon-contact"></span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            
-          <div className="col-12 __contact-info">
+        <div>
 
-              <span className="__info-title">
-                <span className="__info-data">
-                  <a
-                    href="https://www.google.com/maps/place/AME,+Alejandro+Sullivan+1883,+B1722+Merlo,+Provincia+de+Buenos+Aires/@-34.6508106,-58.720373,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbfc10fba83b7:0xec61f00545572de8!8m2!3d-34.650815!4d-58.7181843"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Sullivan 1883 - Merlo Bs.As.
-                  </a>
-                </span>
-              </span>
-            </div>
-            
-          <div className="col-12">
+        </div>
+      </React.Fragment>
+    )
+  }
+
+  renderMap(){
+    return (
+      <React.Fragment>
+        <div className="col-12">
               <div className="container google-maps">
                 <iframe
                   id="__map-location"
@@ -80,8 +36,94 @@ class Contact extends React.Component {
                   allowfullscreen=""
                 ></iframe>
               </div>
-            </div>
- 
+        </div>
+      </React.Fragment>
+    )
+  }
+
+  renderSocial(){
+    return (
+      <React.Fragment>
+            <div className="col-12 social-list">
+                <ul className="m-0 p-0">
+                  <li>
+                      <a href={this.contactLinks['whatsapp']} target="_blank" rel="noopener noreferrer">
+                        <span className="icon-whatsapp icon-contact"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href={this.contactLinks['facebook']} target="_blank" rel="noopener noreferrer">
+                        <span className="icon-facebook icon-contact"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href={this.contactLinks['instagram']} target="_blank" rel="noopener noreferrer">
+                        <span className="icon-instagram icon-contact"></span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href={this.contactLinks['youtube']} target="_blank" rel="noopener noreferrer">
+                        <span className="icon-youtube icon-contact"></span>
+                      </a>
+                  </li>
+                  {/* <li>
+                    <a
+                      href="https://www.google.com/maps/place/AME,+Alejandro+Sullivan+1883,+B1722+Merlo,+Provincia+de+Buenos+Aires/@-34.6508106,-58.720373,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbfc10fba83b7:0xec61f00545572de8!8m2!3d-34.650815!4d-58.7181843"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    <span className="icon-location icon-contact"></span>
+                    </a>
+                  </li> */}
+                </ul>
+              </div>
+  
+      </React.Fragment>
+    )
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        {/* <div className="pruu"></div>   */}
+        <div
+          id="section-contact"
+          className="__section-contact __height-100-vh text-center"
+        >
+        <div className="row col-12 p-0 m-0 contact-body">
+            <div className="__section-title mb-2 pt-4 w-100">CONTACTO</div>
+              
+            <div className="contact-info">
+        
+            <div className="col-12 __contact-info">
+              </div>
+              
+            {/*  */}
+              <div className="col-12 __contact-footer">
+                <img className="__contact-logo" src={logo} alt="SHECHE Motors" />
+                <span className="__info-title">
+                  <span className="__info-data">
+                    <a
+                      href="https://www.google.com/maps/place/AME,+Alejandro+Sullivan+1883,+B1722+Merlo,+Provincia+de+Buenos+Aires/@-34.6508106,-58.720373,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbfc10fba83b7:0xec61f00545572de8!8m2!3d-34.650815!4d-58.7181843"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Sullivan 1883 - Merlo Bs.As.
+                    </a>
+                  </span>
+                </span>
+              </div>
+
+              {this.renderSocial()}
+              {/* {this.renderMap()} */}
+
+              {/* <p className="__contact-copyright">
+                  ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors | All Rights Reserved{" "}
+              </p> */}
+              <span className="__LGM">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leonel-marello-0ba4a262/">developed by lmarello</a>
+              </span>
+          </div>
           </div>
         </div>
       </React.Fragment>

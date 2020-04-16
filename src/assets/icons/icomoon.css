@@ -28,15 +28,21 @@
 [class^="icon-"]::before, [class*=" icon-"]::before{
   color: white;
 }
+.icon-clear, .icon-menu{
+  font-size: 24px;
+}
+.icon-service::before{
+  font-size: 80px;
+  /* color: var(--sheche-primary-color); */
+  color: #ffda60;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 
 .icon-clear:before {
   content: "\e901";
-}
-.icon-location:before {
-  content: "\e907";
-}
-.icon-menu:before {
-  content: "\e908";
 }
 .icon-facebook:before {
   content: "\e902";
@@ -50,7 +56,36 @@
 .icon-youtube:before {
   content: "\e905";
 }
-
-.icon-clear, .icon-menu{
-  font-size: 24px;
+.icon-location:before {
+  content: "\e907";
+}
+.icon-menu:before {
+  content: "\e908";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-hammer:before {
+  content: "\e996";
+}
+.icon-filter:before {
+  content: "\ea5b";
+}
+.icon-tacometro:before {
+  content: "\e900";
+}
+.icon-motor:before {
+  content: "\e906";
+}
+.icon-optica:before {
+  content: "\e909";
+}
+.icon-foco:before {
+  content: "\e90a";
 }

@@ -1,6 +1,5 @@
 .__section-contact {
-  background: linear-gradient(#000, var(--sheche-secondary-color));
-  min-height: calc(100vh - var(--footer-height));
+  background: #23272f;
 }
 .__info-title {
   display: block;
@@ -11,9 +10,8 @@
 .__info-data {
   display: block;
   color: #d6e1ef;
-  font-weight: 100;
-  font-size: 0.8rem;
-  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 1rem;
 }
 #section-contact > div.row.col-12 > div.col-12.col-md-4.__contact-info > span:nth-child(4) > span{
   margin-bottom: 0px;
@@ -25,8 +23,7 @@
 
 .google-maps {
   position: relative;
-  padding-bottom: 20%;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
 }
 .google-maps iframe {
@@ -35,6 +32,12 @@
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-info{
+  padding-top: 0px;
 }
 .social-list ul{
   list-style: none;
@@ -44,18 +47,42 @@
   padding: 15px;
   cursor: pointer;
 }
-.social-list ul li div{
-  border: 1px solid #7b7b7b;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.social-list ul li div a{
-  display: flex;
+.social-list ul li a span[class^="icon-"]:before{
+  color: #686d78;
+  font-size: 18px;
+  cursor: pointer;
 }
 .social-list ul li:hover a span[class^="icon-"]:before{
-  color: #fbe23c;
+  color: #ffda60;
   cursor: pointer;
+}
+#section-contact > div.__section-title{
+  margin-top: 40px;
+}
+.__contact-copyright{
+  color: white;
+  font-size: 10px;
+  font-weight: lighter;
+}
+.contact-body{
+  /* height: 100vh; */
+  display: block;
+  padding-bottom: 40px !important;
+  z-index: 2;
+}
+.__contact-logo{
+  width: 40px;
+}
+.__contact-footer{
+  padding-top: 50px;
+}
+.__LGM{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 8px;
+}
+.__LGM > a,
+.__LGM:hover > a{
+  color: #afafaf;
 }
