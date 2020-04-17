@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import logo from "../../images/logo.png";
+import logoUrl from '../../images/logo.svg';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -72,8 +72,7 @@ class NavBar extends React.Component {
         <div className="container">
           <div>
             <a href="#section-home">
-              <img className="__navbar-logo" src={logo} alt="SHECHE Motors" />
-              {/* <span className="tmp1">S</span><span className="tmp2">Motors</span> */}
+              <img className="__navbar-logo" src={logoUrl} alt="SHECHE Motors" />
             </a>
           </div>
           {this.renderMenu()}

@@ -34,8 +34,10 @@
 }
 .sponsor-name{
   padding: 30px 10px;
+  font-family: 'Motors';
+  text-transform: lowercase;
 }
-.__sponsors > div.__section-title{
+.__sponsors > div.__section-title{ 
   padding-top: 60px;
   color: #272b2d;
 }

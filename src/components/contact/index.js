@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import logo from "../../images/logo.png";
+import logoUrl from '../../images/logo.svg';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -22,8 +22,8 @@ class Contact extends React.Component {
                 <iframe
                   id="__map-location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.154117483007!2d-58.72037298519345!3d-34.65081056749756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfc10fba83b7%3A0xec61f00545572de8!2sAME%2C%20Alejandro%20Sullivan%201883%2C%20B1722%20Merlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1582677272467!5m2!1ses-419!2sar"
-                  frameborder="0"
-                  allowfullscreen=""
+                  frameBorder="0"
+                  allowFullScreen=""
                 ></iframe>
               </div>
         </div>
@@ -72,34 +72,39 @@ class Contact extends React.Component {
               <div className="__contact-info row col-12 m-0">
 
                 <div className="row col-12 m-0 p-0 __containder-data">
-                  <div className="col-12 col-md-6 text-center __contact-data pb-4 pb-md-0">
+
+                  <div className="col-12 col-md-3 text-center">
                     <div className="__contact-data-title" >Dirección</div>
                     <div className="__contact-data-detail">Sullivan 1883 - Merlo Bs.As.</div>
-                    <div>
+                  </div>
+
+                    <div className="col-12 col-md-3 text-center">
                       <div className="__contact-data-title" >Teléfono</div>
                       <div className="__contact-data-detail">+54 11 2450-1000</div>
                     </div>
-                    <div>
+
+                    <div className="col-12 col-md-3 text-center">
                       <div className="__contact-data-title" >Email</div>
-                      <div className="__contact-data-detail">tucorreo@gmail.com</div>
+                      <div className="__contact-data-detail">shechemotors@outlook.com</div>
                     </div>
-                    <div>
+
+                    <div className="col-12 col-md-3 text-center">
                       <div className="__contact-data-title" >Horario</div>
                       <div className="__contact-data-detail">LUN a SAB - 10 a 20hs.</div>
                     </div>
-                  </div>
 
-                  <div className="col-12 col-md-6">
+              
+                  {/* <div className="col-12 col-md-6">
                     {this.renderMap()}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="col-12 __contact-footer">
-                  <img className="__contact-logo" src={logo} alt="SHECHE Motors" />
                   {this.renderSocial()}
                   <p className="__contact-copyright">
                     ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors | All Rights Reserved{" "}
                   </p>
+                  <img className="__contact-logo" src={logoUrl} alt="" />
                 </div>
             </div>
           </div>

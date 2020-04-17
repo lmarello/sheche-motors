@@ -244,4 +244,15 @@
          url('./fonts/righteous-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('./fonts/righteous-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./fonts/righteous-v8-latin-regular.svg#Righteous') format('svg'); /* Legacy iOS */
-  }
+}
+
+@font-face {
+     font-family: 'Sheche';
+     font-style: normal;
+     src: url('./fonts/SF-distant-galaxy-alternate.ttf');
+}
+@font-face {
+     font-family: 'Motors';
+     font-style: normal;
+     src: url('./fonts/plane-crash.ttf');
+}

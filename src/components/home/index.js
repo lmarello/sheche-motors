@@ -2,6 +2,7 @@ import React from "react";
 import ScrollDownArrow from "../scroll-down-arrow";
 import NavBar from "../navbar";
 import "./home.css";
+import brandUrl from '../../images/sheche-brand.svg';
 
 class Home extends React.Component {
   // constructor(props) {
@@ -27,8 +28,12 @@ class Home extends React.Component {
             <NavBar />
             <div className="__home-title d-flex justify-content-center align-items-center text-center">
                 <div className="__home-brand">
-                    <span className="__brand-title">SHECHE MOTORS</span>
-                    <span>servicios automotores</span>
+                   
+                    <div className="row col-12">
+                      <div className="col-12 col-md-8 offset-md-2">
+                        <img className="__brand-logo" src={brandUrl} alt="" />
+                      </div>
+                    </div>
 
                     <div className="__home-text col-md-6 offset-md-3">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam

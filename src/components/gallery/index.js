@@ -21,7 +21,7 @@ class Gallery extends React.Component {
     return (
       this.images.map( x => {
         return (
-          <Carousel.Item style={{"height":"60vh"}}>
+          <Carousel.Item style={{"height":"60vh"}} key={x.id}>
             <img
               className="d-block w-100"
               src={x.src}

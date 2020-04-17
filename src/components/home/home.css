@@ -11,23 +11,10 @@
     background-size: cover;
     background-position-y: 0px;
 }
-.__home-brand > span:nth-child(1){
-    color: var(--sheche-primary-color);
-    font-size: 4rem;
-    display: block;
-    line-height: 1;
+.__brand-logo{
+    width: inherit; 
 }
-.__home-brand > span:nth-child(2){
-    color: #d6e1ef;
-    font-size: 1.5rem;
-    padding-left: 20px;
-    line-height: 0;
-    /* opacity: 0.8; */
-    color: white;
-}
-.__brand-title{
-    font-family: 'Righteous';
-}
+
 .__home-text{
     color: var(--sheche-font-gray);
     margin: 40px auto;

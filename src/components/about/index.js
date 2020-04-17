@@ -59,7 +59,7 @@ class About extends React.Component {
       <React.Fragment>
         {this.services.map(x => {
           return (
-            <div id={`service-${x.id}`} className={`col-12 mb-4  mt-4 col-md-6 col-lg-3 mt-lg-0 mb-lg-0 container p-0 m-0 container-service`}>
+            <div key={`service-${x.id}`} id={`service-${x.id}`} className={`col-12 mb-4  mt-4 col-md-6 col-lg-3 mt-lg-0 mb-lg-0 container p-0 m-0 container-service`}>
                 <span className={`icon-service ${x.icon}`}></span>
                 <div className="service-name">{x.name}</div>
                 <div className="service-description">{x.description}</div>
