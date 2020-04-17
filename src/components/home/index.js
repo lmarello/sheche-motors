@@ -11,7 +11,7 @@ class Home extends React.Component {
   // componentDidMount() {
   //   var headerBg = document.getElementById('section-home');
   //   window.addEventListener('scroll', function(){
-  //       headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
+  //       // headerBg.style.opacity = 1 - +window.pageYOffset/550+'';
   //       headerBg.style.top = +window.pageYOffset+'px';
   //       headerBg.style.backgroundPositionY = - +window.pageYOffset/2+'px';
   //   });

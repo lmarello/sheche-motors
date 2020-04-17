@@ -5,6 +5,10 @@ class About extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      servicesVisibles : []
+    }
+
     this.services = [
       { id: 1, name: "Mecánica general", icon:"icon-motor", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."},
       { id: 2, name: "Mantenimiento", icon:"icon-tacometro", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."  },
@@ -13,12 +17,49 @@ class About extends React.Component {
     ];
   }
 
+  componentDidMount() {
+      const self = this;
+      window.addEventListener('scroll', function(){
+          self.services.map( (service) => {
+            const serviceId = `service-${service.id}`;
+            const element = document.getElementById(serviceId);
+            const data = element.getBoundingClientRect();
+            
+            let { servicesVisibles } = self.state;
+  
+            if(data.top - data.height  - 100 < data.height){
+                if(!servicesVisibles.includes(serviceId)){
+                  servicesVisibles.push(serviceId);
+                  self.setState({ servicesVisibles }, () => {
+                    self.animateCSS(element, 'fadeInUp', () => {
+                      element.classList.add('animated-end');
+                    });
+                  });
+              }
+            }
+          });
+      });
+  }
+
+  animateCSS(element, animationName, callback) {
+    element.classList.add('animated', animationName)
+
+    function handleAnimationEnd() {
+      element.classList.remove('animated', animationName)
+      element.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    }
+
+    element.addEventListener('animationend', handleAnimationEnd)
+  }
+
   renderServices() {
     return (
       <React.Fragment>
         {this.services.map(x => {
           return (
-            <div className="col-12 mb-4  mt-4 col-md-6 col-lg-3 mt-lg-0 mb-lg-0 container p-0 m-0 container-service">
+            <div id={`service-${x.id}`} className={`col-12 mb-4  mt-4 col-md-6 col-lg-3 mt-lg-0 mb-lg-0 container p-0 m-0 container-service`}>
                 <span className={`icon-service ${x.icon}`}></span>
                 <div className="service-name">{x.name}</div>
                 <div className="service-description">{x.description}</div>
@@ -41,9 +82,11 @@ class About extends React.Component {
         >
           <div className="container">
             {/* <div className="__section-title-about">Servicios</div> */}
-            <div className="__section-title">SERVICIOS</div>
+            <div id="leomarello" className="__section-title">SERVICIOS</div>
             <div className="custom-hr top"></div>
-            <div className="row col-12 p-0 m-0 services-container">{this.renderServices()}</div>
+            <div className="row col-12 p-0 m-0 services-container">
+              {this.renderServices()}
+            </div>
             <div className="custom-hr bottom"></div>
           </div>
         </div>

@@ -41,26 +41,38 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-.icon-clear:before {
-  content: "\e901";
-}
-.icon-facebook:before {
-  content: "\e902";
-}
-.icon-instagram:before {
+.icon-tacometro:before {
   content: "\e903";
 }
-.icon-whatsapp:before {
+.icon-clear:before {
   content: "\e904";
 }
-.icon-youtube:before {
+.icon-facebook:before {
   content: "\e905";
 }
-.icon-location:before {
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-whatsapp:before {
   content: "\e907";
 }
-.icon-menu:before {
+.icon-youtube:before {
   content: "\e908";
+}
+.icon-motor:before {
+  content: "\e909";
+}
+.icon-location:before {
+  content: "\e90a";
+}
+.icon-menu:before {
+  content: "\e90b";
+}
+.icon-optica:before {
+  content: "\e90c";
+}
+.icon-foco:before {
+  content: "\e90d";
 }
 .icon-wrench:before {
   content: "\e991";
@@ -77,15 +89,12 @@
 .icon-filter:before {
   content: "\ea5b";
 }
-.icon-tacometro:before {
+.icon-phone:before {
   content: "\e900";
 }
-.icon-motor:before {
-  content: "\e906";
+.icon-mail:before {
+  content: "\e901";
 }
-.icon-optica:before {
-  content: "\e909";
-}
-.icon-foco:before {
-  content: "\e90a";
+.icon-clock:before {
+  content: "\e902";
 }

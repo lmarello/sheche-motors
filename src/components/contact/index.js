@@ -14,16 +14,6 @@ class Contact extends React.Component {
     }
   }
 
-  renderBrands(){
-    return (
-      <React.Fragment>
-        <div>
-
-        </div>
-      </React.Fragment>
-    )
-  }
-
   renderMap(){
     return (
       <React.Fragment>
@@ -66,15 +56,6 @@ class Contact extends React.Component {
                         <span className="icon-youtube icon-contact"></span>
                       </a>
                   </li>
-                  {/* <li>
-                    <a
-                      href="https://www.google.com/maps/place/AME,+Alejandro+Sullivan+1883,+B1722+Merlo,+Provincia+de+Buenos+Aires/@-34.6508106,-58.720373,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbfc10fba83b7:0xec61f00545572de8!8m2!3d-34.650815!4d-58.7181843"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                    <span className="icon-location icon-contact"></span>
-                    </a>
-                  </li> */}
                 </ul>
               </div>
   
@@ -85,46 +66,50 @@ class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <div className="pruu"></div>   */}
-        <div
-          id="section-contact"
-          className="__section-contact __height-100-vh text-center"
-        >
-        <div className="row col-12 p-0 m-0 contact-body">
+        <div id="section-contact" className="__section-contact __height-100-vh text-center">
+          <div className="contact-body container">
             <div className="__section-title mb-2 pt-4 w-100">CONTACTO</div>
-              
-            <div className="contact-info">
-        
-            <div className="col-12 __contact-info">
-              </div>
-              
-            {/*  */}
-              <div className="col-12 __contact-footer">
-                <img className="__contact-logo" src={logo} alt="SHECHE Motors" />
-                <span className="__info-title">
-                  <span className="__info-data">
-                    <a
-                      href="https://www.google.com/maps/place/AME,+Alejandro+Sullivan+1883,+B1722+Merlo,+Provincia+de+Buenos+Aires/@-34.6508106,-58.720373,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcbfc10fba83b7:0xec61f00545572de8!8m2!3d-34.650815!4d-58.7181843"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Sullivan 1883 - Merlo Bs.As.
-                    </a>
-                  </span>
-                </span>
-              </div>
+              <div className="__contact-info row col-12 m-0">
 
-              {this.renderSocial()}
-              {/* {this.renderMap()} */}
+                <div className="row col-12 m-0 p-0 __containder-data">
+                  <div className="col-12 col-md-6 text-center __contact-data pb-4 pb-md-0">
+                    <div className="__contact-data-title" >Dirección</div>
+                    <div className="__contact-data-detail">Sullivan 1883 - Merlo Bs.As.</div>
+                    <div>
+                      <div className="__contact-data-title" >Teléfono</div>
+                      <div className="__contact-data-detail">+54 11 2450-1000</div>
+                    </div>
+                    <div>
+                      <div className="__contact-data-title" >Email</div>
+                      <div className="__contact-data-detail">tucorreo@gmail.com</div>
+                    </div>
+                    <div>
+                      <div className="__contact-data-title" >Horario</div>
+                      <div className="__contact-data-detail">LUN a SAB - 10 a 20hs.</div>
+                    </div>
+                  </div>
 
-              {/* <p className="__contact-copyright">
-                  ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors | All Rights Reserved{" "}
-              </p> */}
-              <span className="__LGM">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leonel-marello-0ba4a262/">developed by lmarello</a>
-              </span>
+                  <div className="col-12 col-md-6">
+                    {this.renderMap()}
+                  </div>
+                </div>
+
+                <div className="col-12 __contact-footer">
+                  <img className="__contact-logo" src={logo} alt="SHECHE Motors" />
+                  {this.renderSocial()}
+                  <p className="__contact-copyright">
+                    ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors | All Rights Reserved{" "}
+                  </p>
+                </div>
+            </div>
           </div>
+
+          <div className="col-12">
+            <span className="__LGM">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/leonel-marello-0ba4a262/">developed by lmarello</a>
+            </span>
           </div>
+
         </div>
       </React.Fragment>
     );
