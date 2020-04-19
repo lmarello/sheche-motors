@@ -81,14 +81,15 @@ class About extends React.Component {
           className="__section-about __height-100-vh text-center"
         >
           <div className="container">
-            <div className="__section-title">SERVICIOS</div>
-            <div className="custom-hr top"></div>
+            <div className="__section-title servicios">SERVICIOS</div>
+            {/* <div className="custom-hr top"></div> */}
             <div className="row col-12 p-0 m-0 services-container">
               {this.renderServices()}
             </div>
-            <div className="custom-hr bottom"></div>
           </div>
         </div>
+        <div className="custom-hr bottom"></div>
+        {/* <div className="__angle-top-bkg"></div> */}
       </React.Fragment>
     );
   }

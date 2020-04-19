@@ -1,6 +1,7 @@
 .__section-contact {
   /* background: #000; */
-  border-top: 4px solid #ffda60;
+  background: #2c2b29;
+  border-top: 1px solid #ffda60;
 }
 .__info-title {
   display: block;
@@ -17,17 +18,17 @@
 .__contact-info{
   padding-top: 50px;
 }
-
-/* #__map-location {
-  width: 100%;
-  height: 100%;
+.__section-title.contact {
+  padding-top: 40px !important;
+  color: #ffda60;
 }
 
 .google-maps {
   position: relative;
   height: 200px;
   overflow: hidden;
-  filter: invert(1) grayscale(1) brightness(0.5);
+  margin-top: 20px;
+  /* filter: invert(1) grayscale(1) brightness(0.5); */
 }
 .google-maps iframe {
   position: absolute;
@@ -35,10 +36,10 @@
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
 #section-contact > div.__section-title{
   margin-top: 40px;
@@ -55,25 +56,23 @@
 .__contact-footer{
   padding-top: 20px;
 }
-
-.__section-title{
-  color: white;
-}
-
 .__containder-data{
   padding-bottom: 20px !important;
-  border-bottom: 1px solid #ffffff69;
+  /* border-bottom: 1px solid #ffffff69; */
   color: white;
 }
 
 .__contact-data-title{
   font-size: 15px;
+  font-weight: bold;
+  color: #e0e0e0;
 }
 
 .__contact-data-detail{
-  font-weight: 100;
+  font-weight: 300;
   padding-bottom:30px;
   font-size: 13.5px;
+  color:#e0e0e0;
 }
 .social-list{
   padding-left: 0;
@@ -88,7 +87,7 @@
   cursor: pointer;
 }
 .social-list ul li a span[class^="icon-"]:before{
-  color: white;
+  color: #ffda60;
   font-size: 26px;
   cursor: pointer;
 }

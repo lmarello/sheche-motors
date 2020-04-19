@@ -1,10 +1,11 @@
 .__section-gallery {
     min-height: 100vh;
-  }
+    /* background: #131313; */
+}
 
-.__section-gallery div.carousel.slide{
-  box-shadow: 0 10px 20px black;
- }
+.__section-title.gallery{
+  padding-top: 50px !important;
+}
 
 .carousel-caption{
   background: #00000099;
@@ -16,3 +17,14 @@
   background-color: #fbe23c;
 }
 
+
+.__gallery2{
+  display: grid;
+  padding-bottom: 50px;
+}
+/* .ReactGridGallery_tile{
+  filter: grayscale(1) !important;
+}
+.ReactGridGallery_tile:hover{
+  filter: none !important;
+} */

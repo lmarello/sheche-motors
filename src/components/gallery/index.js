@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./gallery.css";
 import Sponsors from "../sponsors";
+import Gallery2 from "../gallery2";
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -52,9 +53,15 @@ class Gallery extends React.Component {
     return (
       <React.Fragment>
         <div id="section-gallery" className="__section-gallery __height-100-vh text-center">
-          <div className="__section-title pt-0">GALERÍA</div>
-          {this.renderCarousel()}
+          <div className="__section-title gallery">GALERÍA</div>
+          {/* {this.renderCarousel()} */}
+          <div className="__gallery2 container">
+            <Gallery2 />
+          </div>
+          <div className="custom-hr bottom"></div>
+
           <Sponsors/>
+        
         </div>
       </React.Fragment>
     );

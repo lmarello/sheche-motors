@@ -17,16 +17,14 @@ class Contact extends React.Component {
   renderMap(){
     return (
       <React.Fragment>
-        <div className="col-12">
-              <div className="container google-maps">
-                <iframe
-                  id="__map-location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.154117483007!2d-58.72037298519345!3d-34.65081056749756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfc10fba83b7%3A0xec61f00545572de8!2sAME%2C%20Alejandro%20Sullivan%201883%2C%20B1722%20Merlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1582677272467!5m2!1ses-419!2sar"
-                  frameBorder="0"
-                  allowFullScreen=""
-                ></iframe>
-              </div>
-        </div>
+          <div className="google-maps">
+            <iframe
+              id="__map-location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.154117483007!2d-58.72037298519345!3d-34.65081056749756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfc10fba83b7%3A0xec61f00545572de8!2sAME%2C%20Alejandro%20Sullivan%201883%2C%20B1722%20Merlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1582677272467!5m2!1ses-419!2sar"
+              frameBorder="0"
+              allowFullScreen=""
+            ></iframe>
+          </div>
       </React.Fragment>
     )
   }
@@ -68,7 +66,7 @@ class Contact extends React.Component {
       <React.Fragment>
         <div id="section-contact" className="__section-contact __height-100-vh text-center">
           <div className="contact-body container">
-            <div className="__section-title mb-2 pt-4 w-100">CONTACTO</div>
+            <div className="__section-title contact mb-2 pt-4 w-100">CONTACTO</div>
               <div className="__contact-info row col-12 m-0">
 
                 <div className="row col-12 m-0 p-0 __containder-data">
@@ -94,9 +92,10 @@ class Contact extends React.Component {
                     </div>
 
               
-                  {/* <div className="col-12 col-md-6">
+                  <div className="__map-container w-100">
                     {this.renderMap()}
-                  </div> */}
+                  </div>
+
                 </div>
 
                 <div className="col-12 __contact-footer">

@@ -31,11 +31,6 @@
 .icon-clear, .icon-menu{
   font-size: 24px;
 }
-.icon-service::before{
-  font-size: 80px;
-  /* color: var(--sheche-primary-color); */
-  color: #ffda60;
-}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

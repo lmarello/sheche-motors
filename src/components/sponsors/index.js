@@ -7,7 +7,7 @@ import puntoMetal from '../../images/sponsors/punto-metal.png';
 import mPower from '../../images/sponsors/mpower.png';
 import todoChevrolet from '../../images/sponsors/todo-chevrolet.png';
 import turbosGT from '../../images/sponsors/turbos-gt.png';
-import lmarello from '../../images/sponsors/lmarello.png';
+import atig from '../../images/sponsors/atig.png';
 
 
 export default class Sponsors extends Component {
@@ -29,7 +29,7 @@ export default class Sponsors extends Component {
                 <div className="sponsor-name _turbos_ col-6 col-md-6 col-lg-3"><img src={turbosGT} alt=""></img></div>
                 <div className="sponsor-name _mena_ col-6 col-md-6 col-lg-3"><img src={menaMora} alt=""></img></div>
                 <div className="sponsor-name _chevrolet_ col-6 col-md-6 col-lg-3"><img src={todoChevrolet} alt=""></img></div>
-                <div className="sponsor-name _lmarello_ col-6 col-md-6 col-lg-3"><img src={lmarello} alt=""></img></div>
+                <div className="sponsor-name _lmarello_ col-6 col-md-6 col-lg-3"><img src={atig} alt=""></img></div>
             </div>
           </div>
         </div>

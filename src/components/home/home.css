@@ -1,15 +1,12 @@
 .__section-home {
     padding: 0;
     margin: 0;
-    /* background: var(--color-dark-gray);  */
     height: 100vh;
-}
-.__section-home{
-    /* background: url('../../images/banner-services.jpg'); */
-    background: url('../../images/portada.png');
+    background: url('../../images/portada3.png');
     background-position: center;  
     background-size: cover;
     background-position-y: 0px;
+    background-repeat: no-repeat;
 }
 .__brand-logo{
     width: inherit; 
@@ -20,7 +17,9 @@
     margin: 40px auto;
     margin-top: 0;
     font-weight: 300;
+    font-size: 14px;
 }
 .__home-title{
     height: calc(100% - var(--navbar-height));
+    margin-top: -70px;
 }

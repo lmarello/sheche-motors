@@ -3,19 +3,24 @@
     color: #272b2d;
     font-size: 30px;
     min-height: 400px;
-    background: #131313;
-    box-shadow: 0 10px 20px #0000008a;
-    padding-bottom: 40px;
+    /* background: #131313; */
+    /* box-shadow: 0 10px 20px #0000008a; */
+    padding-bottom: 80px;
+    /* background-image: url("../../images/bkg-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: border-box; */
   }
   .sponsor-name{
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* filter: drop-shadow(2px 4px 6px black) sepia(1); */
   }
   .__sponsors > div.__section-title{ 
-    padding-top: 60px;
-    color: white;
+    padding-top: 50px;
   }
   .sponsor-name > img{
     width: 90%;
