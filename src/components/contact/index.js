@@ -73,22 +73,22 @@ class Contact extends React.Component {
 
                 <div className="row col-12 m-0 p-0 __containder-data">
 
-                  <div className="col-12 col-md-3 text-center">
+                  <div className="col-12 col-sm-6 col-lg-3 text-center">
                     <div className="__contact-data-title" >Dirección</div>
                     <div className="__contact-data-detail">Sullivan 1883 - Merlo Bs.As.</div>
                   </div>
 
-                    <div className="col-12 col-md-3 text-center">
+                    <div className="col-12 col-sm-6 col-lg-3 text-center">
                       <div className="__contact-data-title" >Teléfono</div>
                       <div className="__contact-data-detail">+54 11 2450-1000</div>
                     </div>
 
-                    <div className="col-12 col-md-3 text-center">
+                    <div className="col-12 col-sm-6 col-lg-3 text-center">
                       <div className="__contact-data-title" >Email</div>
                       <div className="__contact-data-detail">shechemotors@outlook.com</div>
                     </div>
 
-                    <div className="col-12 col-md-3 text-center">
+                    <div className="col-12 col-sm-6 col-lg-3 text-center">
                       <div className="__contact-data-title" >Horario</div>
                       <div className="__contact-data-detail">LUN a SAB - 10 a 20hs.</div>
                     </div>

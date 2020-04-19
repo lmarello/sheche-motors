@@ -18,6 +18,7 @@
 .__home-text{
     color: var(--sheche-font-gray);
     margin: 40px auto;
+    margin-top: 0;
     font-weight: 300;
 }
 .__home-title{
