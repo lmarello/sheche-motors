@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./gallery.css";
+import Sponsors from "../sponsors";
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -47,40 +48,13 @@ class Gallery extends React.Component {
     )
   }
 
-  renderSponsors(){
-    return(
-      <React.Fragment>
-        <div className="__sponsors">
-        <div className="__section-title">SPONSORS</div>
-          <div className="w-100 container">
-            <div className="row col-12 p-0 m-0">
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 1</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 2</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 3</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 4</div>
-            </div>
-            <div className="row col-12 p-0 m-0">
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 1</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 2</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 3</div>
-              <div className="sponsor-name col-12 col-md-6 col-lg-3">SPONSOR 4</div>
-            </div>
-          </div>
-        </div>
-      </React.Fragment>
-    )
-  }
-
   render() {
     return (
       <React.Fragment>
-        <div
-          id="section-gallery"
-          className="__section-gallery __height-100-vh text-center"
-        >
+        <div id="section-gallery" className="__section-gallery __height-100-vh text-center">
           <div className="__section-title pt-0">GALERÍA</div>
           {this.renderCarousel()}
-          {this.renderSponsors()}
+          <Sponsors/>
         </div>
       </React.Fragment>
     );

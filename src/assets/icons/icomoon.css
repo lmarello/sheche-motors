@@ -40,7 +40,15 @@
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-
+.icon-phone:before {
+  content: "\e900";
+}
+.icon-mail:before {
+  content: "\e901";
+}
+.icon-clock:before {
+  content: "\e902";
+}
 .icon-tacometro:before {
   content: "\e903";
 }
@@ -89,12 +97,6 @@
 .icon-filter:before {
   content: "\ea5b";
 }
-.icon-phone:before {
-  content: "\e900";
-}
-.icon-mail:before {
-  content: "\e901";
-}
-.icon-clock:before {
-  content: "\e902";
+.icon-chip:before {
+  content: "\e90e";
 }

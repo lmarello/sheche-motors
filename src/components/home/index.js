@@ -29,17 +29,16 @@ class Home extends React.Component {
             <div className="__home-title d-flex justify-content-center align-items-center text-center">
                 <div className="__home-brand">
                    
-                    <div className="row col-12">
-                      <div className="col-12 col-md-8 offset-md-2">
+                    <div className="row col-12 p-0 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+                      <div className="col-12 m-0 p-0 ">
                         <img className="__brand-logo" src={brandUrl} alt="" />
                       </div>
                     </div>
 
-                    <div className="__home-text col-md-6 offset-md-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </div>
+                    <div className="__home-text col-10 offset-1 col-md-6 offset-md-3">
+                    Somos un taller de servicio y mantenimiento de vehiculos livianos y medianos; nos centramos tanto en la rigurosidad y prolijidad de las reparaciones como tambien en lograr los mejores presupuestos y ser 100% efectivos.                  </div>
                 </div>
-                <ScrollDownArrow/>
+                {/* <ScrollDownArrow/> */}
             </div>
         </div>
       </React.Fragment>

@@ -102,7 +102,7 @@ class Contact extends React.Component {
                 <div className="col-12 __contact-footer">
                   {this.renderSocial()}
                   <p className="__contact-copyright">
-                    ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors | All Rights Reserved{" "}
+                    ©Copyright <span>{new Date().getFullYear()}</span> SHECHE Motors{" "}
                   </p>
                   <img className="__contact-logo" src={logoUrl} alt="" />
                 </div>

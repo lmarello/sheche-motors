@@ -1,0 +1,36 @@
+.__sponsors {
+    text-align: center;
+    color: #272b2d;
+    font-size: 30px;
+    min-height: 400px;
+    background: #131313;
+    box-shadow: 0 10px 20px #0000008a;
+    padding-bottom: 40px;
+  }
+  .sponsor-name{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .__sponsors > div.__section-title{ 
+    padding-top: 60px;
+    color: white;
+  }
+  .sponsor-name > img{
+    width: 90%;
+    padding-left: 5%;
+  }
+
+.sponsor-name._mena_ > img,
+.sponsor-name._chevrolet_ > img{
+    width: 80%;
+    padding-left: 10;
+} 
+
+  /* .sponsor-name._alexander_ > img{
+    width: 100%;
+  }
+  .sponsor-name._tino_ > img{
+    width: 290px;
+  } */

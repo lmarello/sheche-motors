@@ -10,10 +10,10 @@ class About extends React.Component {
     }
 
     this.services = [
-      { id: 1, name: "Mecánica general", icon:"icon-motor", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."},
-      { id: 2, name: "Mantenimiento", icon:"icon-tacometro", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."  },
-      { id: 3, name: "Electricidad", icon:"icon-foco", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."  },
-      { id: 4, name: "Personalización", icon:"icon-optica", description:"La mejor atención para ti y para tu vehículo y siempre elaboramos un presupuesto personalizado y sin compromiso."  }
+      { id: 1, name: "Mecánica general", icon:"icon-motor", description:"Tren delantero, suspension, frenos, embragues, motores y lo que sea necesario para solucionar cada problema."},
+      { id: 2, name: "Mantenimiento", icon:"icon-tacometro", description:"Servicio de cambio de fluidos y filtros, cambio de lamparas, chequeos de tren delantero y suspension, revisiones generales."  },
+      { id: 3, name: "Electrónica", icon:"icon-chip", description:"Escaneos de todos los modulos, soluciones de averias, reparaciones de cableados, software y hardware."  },
+      { id: 4, name: "Estética", icon:"icon-optica", description:"Restauraciones de opticas, limpieza de interiores, tratamientos de pintura, lavados full."  }
     ];
   }
 
@@ -81,8 +81,7 @@ class About extends React.Component {
           className="__section-about __height-100-vh text-center"
         >
           <div className="container">
-            {/* <div className="__section-title-about">Servicios</div> */}
-            <div id="leomarello" className="__section-title">SERVICIOS</div>
+            <div className="__section-title">SERVICIOS</div>
             <div className="custom-hr top"></div>
             <div className="row col-12 p-0 m-0 services-container">
               {this.renderServices()}

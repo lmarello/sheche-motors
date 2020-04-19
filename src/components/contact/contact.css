@@ -1,5 +1,6 @@
 .__section-contact {
-  background: #000;
+  /* background: #000; */
+  border-top: 4px solid #ffda60;
 }
 .__info-title {
   display: block;
@@ -74,7 +75,10 @@
   padding-bottom:30px;
   font-size: 13.5px;
 }
-
+.social-list{
+  padding-left: 0;
+  padding-right: 0;
+}
 .social-list ul{
   list-style: none;
 }
@@ -84,12 +88,12 @@
   cursor: pointer;
 }
 .social-list ul li a span[class^="icon-"]:before{
-  color: #ffda60;
+  color: white;
   font-size: 26px;
   cursor: pointer;
 }
 .social-list ul li:hover a span[class^="icon-"]:before{
-  color: #fbe339;
+  color: #ffda60;
   cursor: pointer;
 }
 
