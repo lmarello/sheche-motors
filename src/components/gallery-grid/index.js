@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Gallery from 'react-grid-gallery';
 
+import img0 from "../../images/gallery-photos/originals/0.jpg";
+import img0thumb from "../../images/gallery-photos/thumbails/0.jpg";
 import img1 from "../../images/gallery-photos/originals/1.jpg";
 import img1thumb from "../../images/gallery-photos/thumbails/1.jpg";
 import img2 from "../../images/gallery-photos/originals/2.jpg";
@@ -30,12 +32,18 @@ import img13thumb from "../../images/gallery-photos/thumbails/13.jpg";
 import img14 from "../../images/gallery-photos/originals/14.jpg";
 import img14thumb from "../../images/gallery-photos/thumbails/14.jpg";
 
-export default class Gallery2 extends Component {
+export default class GalleryGrid extends Component {
     constructor(props){
         super(props);
 
         this.IMAGES =
             [
+                {
+                    src: img0,
+                    thumbnail: img0thumb,
+                    thumbnailWidth: 320,
+                    thumbnailHeight: 212,
+                },
                 {
                     src: img1,
                     thumbnail: img1thumb,

@@ -22,7 +22,7 @@ export default class BackToTop extends Component {
     render() {
         return (
             <div id="back-to-top">
-                <a href="#section-home">
+                <a href="#inicio">
                     <div className="__angle"></div>
                     <div className="__letter">S</div>
                     <div className="__letter">U</div>

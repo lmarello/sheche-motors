@@ -42,16 +42,16 @@ class NavBar extends React.Component {
       <div>
         <ul id="__navbar-list" className={`__navbar-list ${menuActive}`}>
           <li className="__menu-item">
-            <a className="__menu-item-anchor" href="#section-home">INICIO</a>
+            <a className="__menu-item-anchor" href="#inicio">INICIO</a>
           </li>
           <li className="__menu-item">
-            <a className="__menu-item-anchor" href="#section-about-as">SERVICIOS</a>
+            <a className="__menu-item-anchor" href="#servicios">SERVICIOS</a>
           </li>
           <li className="__menu-item">
-            <a className="__menu-item-anchor" href="#section-gallery">GALERÍA</a>
+            <a className="__menu-item-anchor" href="#galeria">GALERÍA</a>
           </li>
           <li className="__menu-item">
-            <a className="__menu-item-anchor" href="#section-contact">CONTACTO</a>
+            <a className="__menu-item-anchor" href="#contacto">CONTACTO</a>
           </li>
         </ul>
 
@@ -71,7 +71,7 @@ class NavBar extends React.Component {
       <nav id="navbar" className={`navbar __navbar ${menuExpanded}`}>
         <div className="container">
           <div>
-            <a href="#section-home">
+            <a href="#inicio">
               <img className="__navbar-logo" src={logoUrl} alt="SHECHE Motors" />
             </a>
           </div>

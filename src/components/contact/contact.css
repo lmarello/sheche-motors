@@ -1,6 +1,6 @@
 .__section-contact {
   /* background: #000; */
-  background: #2c2b29;
+  background-color: #131313;
   border-top: 1px solid #ffda60;
 }
 .__info-title {
@@ -20,7 +20,6 @@
 }
 .__section-title.contact {
   padding-top: 40px !important;
-  color: #ffda60;
 }
 
 .google-maps {
@@ -41,7 +40,7 @@
   margin-right: auto;
 }
 
-#section-contact > div.__section-title{
+.__section-contact > div.__section-title{
   margin-top: 40px;
 }
 .contact-body{

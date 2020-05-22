@@ -1,7 +1,7 @@
 import React from "react";
-import "./about.css";
+import "./services.css";
 
-class About extends React.Component {
+class Services extends React.Component {
   constructor(props) {
     super(props);
 
@@ -77,7 +77,7 @@ class About extends React.Component {
     return (
       <React.Fragment>
         <div
-          id="section-about-as"
+          id="servicios"
           className="__section-about __height-100-vh text-center"
         >
           <div className="container">
@@ -94,4 +94,4 @@ class About extends React.Component {
     );
   }
 }
-export default About;
+export default Services;

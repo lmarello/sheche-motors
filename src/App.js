@@ -6,7 +6,7 @@ import "./fonts-faces.css";
 import "./App.css";
 import "./assets/animate.css";
 import Home from "./components/home";
-import About from "./components/about";
+import Services from "./components/services";
 import Gallery from "./components/gallery";
 import Contact from "./components/contact";
 import BackToTop from "./components/back-to-top";
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Home />
       <BackToTop />
-      <About />
+      <Services />
       <Gallery />
       <Contact />
       {/* <Footer /> */}

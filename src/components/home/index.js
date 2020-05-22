@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollDownArrow from "../scroll-down-arrow";
 import NavBar from "../navbar";
 import "./home.css";
 import brandUrl from '../../images/sheche-brand.svg';
@@ -23,7 +22,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <div
-          id="section-home"
+          id="inicio"
           className="__section-home __height-100-vh"
         >
             <NavBar />
@@ -37,10 +36,9 @@ class Home extends React.Component {
                     </div>
 
                     <div className="__home-text col-10 offset-1 col-md-6 offset-md-3">
-                      Somos un taller de servicio y mantenimiento de vehiculos livianos y medianos; nos centramos tanto en la rigurosidad y prolijidad de las reparaciones como tambien en lograr los mejores presupuestos y ser 100% efectivos.                  
+                      Somos un taller de servicio y mantenimiento de vehículos livianos y medianos; nos centramos tanto en la rigurosidad y prolijidad de las reparaciones como también en lograr los mejores presupuestos y ser 100% efectivos.                  
                     </div>
                 </div>
-                {/* <ScrollDownArrow/> */}
             </div>
         </div>
       </React.Fragment>

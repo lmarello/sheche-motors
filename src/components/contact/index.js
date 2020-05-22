@@ -64,7 +64,7 @@ class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="section-contact" className="__section-contact __height-100-vh text-center">
+        <div id="contacto" className="__section-contact __height-100-vh text-center">
           <div className="contact-body container">
             <div className="__section-title contact mb-2 pt-4 w-100">CONTACTO</div>
               <div className="__contact-info row col-12 m-0">
